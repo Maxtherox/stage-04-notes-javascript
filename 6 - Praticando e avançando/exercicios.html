@@ -1,0 +1,103 @@
+<script>
+    //1. Declare uma variável de nome weight
+
+    //let weight;
+
+    //2. Que tipo de dado é a variável acima 
+    //console.log(typeof weight)
+    //undefined
+
+    /* 
+        3. Declare uma variável e atribua valores para cada um dos dados:
+            * Name: String
+            * Age: number (integer)
+            * Stars: Number (Float)
+            * isSubscribed: Boolean
+    */
+   
+    /*
+    let name = "Guilherme";
+    let age = 24;
+    let stars = 4.6;
+    let isSubscribed = true;
+
+
+    if  (isSubscribed = true)         
+         console.log(`${name} tem ${age} anos de idade, seu nivel atualmente na plataforma é de: ${stars} estrelas e sua inscrição está ativa`)
+    
+    else if  (isSubscribed = false)
+        console.log(`${name} tem ${age} de idade seu nivel atualmente é de: ${stars} estrelas e sua inscrição não está ativa`)
+    else (isSubscribed = undefined)
+
+    /* 
+        4. A Variável student abaixo é de que tipo de dado?
+
+        4.1 Atribua a ela as mesmas propriedades e valores do exercicios 3.
+
+        4.2 mostre no console a seguinte mensagem:
+
+            <name> de idade <age> pesa <weight> kg.
+            
+                atenção, substitua name, age e weight pelos valores de cada propriedade do objeto.
+
+    */
+    
+    
+    let student = {
+         name: "Guilherme",
+         age: 24,
+         stars: 4.6,
+         isSubscribed: true,
+         weight: 120
+    };
+    
+ 
+    //console.log(`${student.name} tem ${student.age} anos de idade e pesa ${student.weight} kilos. `)
+        
+
+    /* 
+        5. Declare uma variável do tipo array, de nome student e atribua a ela nenhum valor, ou seja, somente o array vazio
+    */
+
+    let students = []
+    /* 
+        6. Reatribua o valor para a vari´pavel acima, colocando dentro dela o objeto student da questão 4. (não copiar e colar o objeto, mas usar o objeto criado e inserir ele no array.)
+    */
+
+    students = [
+        student
+    ]
+
+    console.log(students)
+
+    /* 
+        7. Coloque no console o valor da posição zero do array acima
+    */ 
+
+    console.log(students[0])
+
+    /* 
+        8. Crie um novo student e o inclua na posição 1
+    */
+
+    const Naira = {
+        name: "Naira",
+        age: 19,
+        weight: 80,
+        isSubscribed: true,
+    }
+
+    students[1] = Naira
+
+    console.log(students)
+
+    /* 
+        9. Sem rodar o código responda qual é a resposta do código abaixo e por que? Após sua resposta, rode o código e veja se você acertou
+    */
+
+    console.log(a) // Vai imprimir um undefined, pois a variável A ainda não existe, ela sofrera um "hoisting" subindo a acima do console log, porém sem valor definido.
+    var a = 1 
+
+
+
+</script>
